@@ -9,6 +9,9 @@ h2 {
 h3 {
   color: #414b5c;
 }
+h4 {
+  color: #414b5c;
+}
 p {
   font-size: 1rem;
   color: #878787;
@@ -29,7 +32,7 @@ nav ul {
   padding: 8px 36px;
 }
 section {
-  padding: 4rem 2rem;
+  padding: 4rem 8rem;
 }
 nav ul li:first-child {
   flex: 1;
@@ -125,4 +128,49 @@ button:hover {
 }
 .htmlcss {
   width: 80%;
+}
+.project-section {
+  background-color: #f3f7f9;
+}
+.project-section h2 {
+  text-align: center;
+}
+.project-section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.proj-img-container {
+  background-color: #c7ccd4;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.proj-img-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.proj-content,
+.proj-img-container {
+  flex: 1;
+}
+
+.proj-content {
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+.proj-content button {
+  background-color: #f99f0a;
+  color: white;
+  cursor: pointer;
+}
+.proj-content button:hover {
+  background-color: #ffb33a;
 }
