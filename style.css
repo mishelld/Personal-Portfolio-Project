@@ -1,10 +1,24 @@
 h1 {
   font-size: 2.5rem;
+  color: #414b5c;
+}
+h2 {
+  font-size: 2rem;
+  color: #414b5c;
+}
+h3 {
+  color: #414b5c;
 }
 p {
   font-size: 1rem;
+  color: #878787;
+
   line-height: 1.6;
 }
+ul li {
+  color: #878787;
+}
+
 nav {
   background-color: #fefefe;
 }
@@ -14,7 +28,9 @@ nav ul {
   gap: 20px;
   padding: 8px 36px;
 }
-
+section {
+  padding: 4rem 2rem;
+}
 nav ul li:first-child {
   flex: 1;
   color: #6892ec;
@@ -29,9 +45,7 @@ nav ul li:not(:first-child) a {
 nav a {
   text-decoration: none;
 }
-section {
-  padding: 4rem 2rem;
-}
+
 .hero-section {
   background: linear-gradient(to right, #f3f7f9, #e7ecf2);
   display: flex;
@@ -45,12 +59,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-.hero-section h1 {
-  color: #414b5c;
-}
-.hero-section p {
-  color: #878787;
-}
+
 .img-container {
   width: 200px;
   height: 200px;
@@ -71,4 +80,49 @@ button {
 }
 button:hover {
   background-color: #0046ea;
+}
+
+.about-section {
+  display: flex;
+  gap: 4rem;
+}
+.about-section main {
+  flex: 2;
+}
+
+.about-section aside {
+  flex: 1;
+}
+.about-section aside ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-section aside ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+.bar-container {
+  background-color: #c3c3c3;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 50%;
+}
+.bar {
+  background-color: #375aab;
+  height: 100%;
+}
+.javascript {
+  width: 90%;
+}
+.react {
+  width: 85%;
+}
+.nodejs {
+  width: 90%;
+}
+.htmlcss {
+  width: 80%;
 }
