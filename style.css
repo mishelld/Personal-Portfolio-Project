@@ -1,3 +1,10 @@
+h1 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 nav {
   background-color: #fefefe;
 }
@@ -21,4 +28,47 @@ nav ul li:not(:first-child) a {
 }
 nav a {
   text-decoration: none;
+}
+section {
+  padding: 4rem 2rem;
+}
+.hero-section {
+  background: linear-gradient(to right, #f3f7f9, #e7ecf2);
+  display: flex;
+}
+.hero-section main,
+.hero-section aside {
+  flex: 1;
+}
+.hero-section aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h1 {
+  color: #414b5c;
+}
+.hero-section p {
+  color: #878787;
+}
+.img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: #c7ccd4;
+  overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+}
+button {
+  background-color: #2562ee;
+  color: #e7efff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0046ea;
 }
