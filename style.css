@@ -245,3 +245,9 @@ form > div {
   justify-content: center;
   align-items: center;
 }
+
+footer {
+  background-color: rgb(30, 34, 65);
+  display: flex;
+  justify-content: center;
+}
