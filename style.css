@@ -21,7 +21,10 @@ p {
 ul li {
   color: #878787;
 }
-
+ul {
+  list-style: none;
+  padding: 0;
+}
 nav {
   background-color: #fefefe;
 }
@@ -177,4 +180,68 @@ button:hover {
 }
 .proj-content button:hover {
   background-color: #ffb33a;
+}
+.contact-container {
+  display: flex;
+}
+
+.contact-container aside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-container aside h3 {
+  margin: 0;
+}
+.contact-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  color: #414b5c;
+}
+input {
+  padding: 10px;
+}
+textarea {
+  height: 100px;
+}
+form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-btn {
+  padding: 10px 25px;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.icon-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.icon-container:hover {
+  transform: scale(1.1);
+}
+
+.icon-container img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
