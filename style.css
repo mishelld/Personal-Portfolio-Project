@@ -1,0 +1,24 @@
+nav {
+  background-color: #fefefe;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 8px 36px;
+}
+
+nav ul li:first-child {
+  flex: 1;
+  color: #6892ec;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav ul li:not(:first-child) a {
+  color: #aab3bf;
+  font-weight: 600;
+}
+nav a {
+  text-decoration: none;
+}
