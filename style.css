@@ -295,4 +295,15 @@ footer {
   .about-section {
     flex-direction: column;
   }
+  .project-section > div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-container {
+    width: 100%;
+  }
+  .proj-content button {
+    width: 100%;
+  }
 }
