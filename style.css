@@ -31,22 +31,27 @@ ul {
 nav {
   background-color: #fefefe;
 }
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 1px solid black;
+}
+/*nav*/
 nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
-  padding: 8px 36px;
 }
-section {
-  padding: 4rem 8rem;
-}
+
 nav ul li:first-child {
   flex: 1;
   color: #6892ec;
   font-weight: 700;
   font-size: 1.5rem;
 }
-
+section {
+  padding: 4rem 0;
+}
 nav ul li:not(:first-child) a {
   color: #aab3bf;
   font-weight: 600;
@@ -56,8 +61,10 @@ nav a {
 }
 
 .hero-section {
-  background: linear-gradient(to right, #f3f7f9, #e7ecf2);
   display: flex;
+}
+#home {
+  background: linear-gradient(to right, #f3f7f9, #e7ecf2);
 }
 .hero-section main,
 .hero-section aside {
@@ -135,7 +142,7 @@ button:hover {
 .htmlcss {
   width: 80%;
 }
-.project-section {
+#projects {
   background-color: #f3f7f9;
 }
 .project-section h2 {
@@ -253,4 +260,16 @@ footer {
   background-color: rgb(30, 34, 65);
   display: flex;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  .hero-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-section main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
