@@ -207,7 +207,6 @@ nav a {
 /*-----------------------------------------------------------------*/
 /*contact*/
 /*-----------------------------------------------------------------*/
-
 .contact-container {
   display: flex;
 }
@@ -305,5 +304,21 @@ footer {
   }
   .proj-content button {
     width: 100%;
+  }
+  .contact-section h2 {
+    text-align: center;
+  }
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-btn {
+    width: 100%;
+  }
+  .contact-container aside {
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
   }
 }
