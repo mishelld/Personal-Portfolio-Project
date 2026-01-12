@@ -39,6 +39,7 @@ section {
   margin: 0 auto;
   max-width: 1200px;
   border-radius: 1px solid black;
+  padding: 0 16px;
 }
 button {
   background-color: #2562ee;
@@ -171,11 +172,12 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .proj-img-container {
   background-color: #c7ccd4;
-  border-radius: 5px;
-  overflow: hidden;
 }
 .proj-img-container img {
   width: 100%;
@@ -209,6 +211,9 @@ nav a {
 /*-----------------------------------------------------------------*/
 .contact-container {
   display: flex;
+}
+.contact-section h2 {
+  text-align: center;
 }
 
 .contact-container aside {
@@ -281,6 +286,9 @@ footer {
   display: flex;
   justify-content: center;
 }
+footer p {
+  color: white;
+}
 /*-----------------------------------------------------------------*/
 
 @media (max-width: 600px) {
@@ -295,10 +303,14 @@ footer {
   .about-section {
     flex-direction: column;
   }
+  .about-section {
+    text-align: center;
+  }
   .project-section > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
   .project-container {
     width: 100%;
