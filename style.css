@@ -292,4 +292,7 @@ footer {
     text-align: center;
     align-items: center;
   }
+  .about-section {
+    flex-direction: column;
+  }
 }
