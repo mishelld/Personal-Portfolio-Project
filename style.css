@@ -58,23 +58,46 @@ button:hover {
 nav {
   background-color: #fefefe;
 }
-nav ul {
+.nav-container {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 20px;
 }
-nav ul li:first-child {
+.name {
   flex: 1;
   color: #6892ec;
   font-weight: 700;
   font-size: 1.5rem;
 }
-nav ul li:not(:first-child) a {
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+nav ul a {
   color: #aab3bf;
   font-weight: 600;
 }
 nav a {
   text-decoration: none;
+}
+.hamburger {
+  background-color: transparent;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 0;
+}
+.hamburger:hover {
+  background-color: #ededed;
+}
+.hamburger div {
+  height: 3px;
+  background-color: #6d6d6d;
+  border-radius: 5px;
 }
 /*-----------------------------------------------------------------*/
 /*hero/home*/
@@ -292,6 +315,9 @@ footer p {
 /*-----------------------------------------------------------------*/
 
 @media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
   .hero-section {
     flex-direction: column;
     gap: 20px;
