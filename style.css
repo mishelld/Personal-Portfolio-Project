@@ -255,8 +255,9 @@ form > div {
 .icon-container {
   width: 30px;
   height: 30px;
-  border-radius: 30px;
-  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #3a4eff;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
