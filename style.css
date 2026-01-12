@@ -4,27 +4,33 @@
 
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 h1 {
   font-size: 2.5rem;
-  color: #414b5c;
 }
 h2 {
   font-size: 2rem;
-  color: #414b5c;
 }
 h3 {
-  color: #414b5c;
+  font-size: 1.5rem;
 }
+h1,
+h2,
+h3,
 h4 {
   color: #414b5c;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #878787;
   line-height: 1.6;
 }
 ul li {
+  color: #878787;
+}
+ul li a {
+  text-decoration: none;
   color: #878787;
 }
 ul {
@@ -79,17 +85,28 @@ nav {
 }
 .nav-links {
   display: flex;
-  gap: 10px;
+  margin: 0;
 }
 nav ul a {
   color: #aab3bf;
   font-weight: 600;
 }
+
+.nav-links li a {
+  display: block;
+  padding: 15px 10px;
+}
 nav a {
   text-decoration: none;
 }
+.nav-links li:hover {
+  background-color: #d38cff;
+  cursor: pointer;
+}
+.nav-links li:hover a {
+  color: white;
+}
 .hamburger {
-  background-color: #ededed;
   width: 30px;
   height: 20px;
   display: flex;
@@ -234,10 +251,11 @@ nav a {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .proj-content button {
-  background-color: #f99f0a;
+  background-color: #478bbe;
   color: white;
   cursor: pointer;
 }
@@ -320,16 +338,22 @@ form > div {
 /*-----------------------------------------------------------------*/
 
 footer {
-  background-color: rgb(30, 34, 65);
+  background-color: rgb(53, 62, 70);
   display: flex;
   justify-content: center;
 }
-footer p {
-  color: white;
-}
-/*-----------------------------------------------------------------*/
 
-@media (max-width: 600px) {
+/*-----------------------------------------------------------------*/
+@media (max-width: 1000px) {
+  .project-container h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  /*navbar*/
+  /*-----------------------------------------------------------------*/
+
   .nav-links {
     display: none;
   }
@@ -351,17 +375,14 @@ footer p {
     background-color: rgba(255, 255, 255, 0.864);
     margin: 0;
   }
-  .nav-links li:hover {
-    background-color: #d38cff;
-    cursor: pointer;
-  }
-  .nav-links li:hover a {
-    color: white;
-  }
-
   .nav-links li {
     padding: 4px 16px;
   }
+  /*-----------------------------------------------------------------*/
+
+  /*home*/
+  /*-----------------------------------------------------------------*/
+
   #home {
     background: linear-gradient(to top, #ffffff, #b948ff28, #9673fe6a);
   }
@@ -373,12 +394,22 @@ footer p {
     text-align: center;
     align-items: center;
   }
+  /*-----------------------------------------------------------------*/
+
+  /*about*/
+  /*-----------------------------------------------------------------*/
+
   .about-section {
     flex-direction: column;
   }
   .about-section {
     text-align: center;
   }
+  /*-----------------------------------------------------------------*/
+
+  /*projects*/
+  /*-----------------------------------------------------------------*/
+
   .project-section > div {
     flex-direction: column;
     justify-content: center;
@@ -391,6 +422,11 @@ footer p {
   .proj-content button {
     width: 100%;
   }
+  /*-----------------------------------------------------------------*/
+
+  /*contact*/
+  /*-----------------------------------------------------------------*/
+
   .contact-section h2 {
     text-align: center;
   }
@@ -407,4 +443,5 @@ footer p {
   .social-icons {
     justify-content: center;
   }
+  /*-----------------------------------------------------------------*/
 }
